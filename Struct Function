@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Student {
+    string first_name;
+    string last_name;
+    int standard;
+    int age;
+};
+
+int main() {
+    Student st;
+
+    // Reading the inputs in the correct order
+    cin >> st.age;
+    cin >> st.first_name;
+    cin >> st.last_name;
+    cin >> st.standard;
+
+    // Output in the required format
+    cout << st.age << " " << st.first_name << " " << st.last_name << " " << st.standard;
+
+    return 0;
+}
